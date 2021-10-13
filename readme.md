@@ -1,9 +1,36 @@
-# Run  nodejs server
+## Run  nodejs server only
 
-1. nodemon server.js
+# Install mongoDB:-
+
+    `https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04-source`
+
+# Run this command:-
+
+    1. cd angular-node
+
+    2. npm install
+
+# Run Node server use this cmd
+
+    1. nodemon server.js
+
+<--------------------------------------||----------------------------------------||----------------------------------->
 
 
-# Run angularjs
+
+## Run client side
 
 
-1. cd client/ && ng serve`
+# Install angular
+
+    1. install angular 6.1.1 version
+
+# Install NPM modules
+
+    1. npm install
+
+
+# Run angular client server
+
+    1. ng s
+
