@@ -1,0 +1,31 @@
+
+<div class="container" style="width: 600px; margin-top: 50px;">
+  <h2 style="margin: auto"> List Details</h2>
+  <br>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th style="display:none;">Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Email</th>
+      <th>Education</th>
+      <th>Occupation</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of Employee">
+      <td style="display:none;">{{user.id}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.Occupation}}</td>
+      <td>{{user.salary}}</td>
+      <td><button class="btn btn-success btn btn-danger" (click)="removeEmployee(user)">Delete</button>
+      <td><button class="btn btn-success" [routerLink]= "['/edit-emlployee', user._id]">Edit</button>
+    </tr>
+    </tbody>
+  </table>
+</div>
